@@ -22,10 +22,10 @@ public class Main {
 		System.out.println("For random words with length between 3 and 10");
 		alogsComparator.measureExecutionTimes(anagramAlgos, 3, 10);
 
-		System.out.println("or random words with length between 5 and 15");
+		System.out.println("For random words with length between 5 and 15");
 		alogsComparator.measureExecutionTimes(anagramAlgos, 5, 15);
 
-		System.out.println("or random words with length between 15 and 100");
+		System.out.println("For random words with length between 15 and 100");
 		alogsComparator.measureExecutionTimes(anagramAlgos, 15, 100);
 	}
 
