@@ -20,13 +20,13 @@ public class AnagramHashMapImpl implements Anagram {
 			return false;
 		}
 
-		final Map<Character, Integer> aChars = this.getCharsOccurrencesB(a.toLowerCase());
-		final Map<Character, Integer> bChars = this.getCharsOccurrencesB(b.toLowerCase());
+		final Map<Character, Integer> aChars = this.getCharsOccurrences(a.toLowerCase());
+		final Map<Character, Integer> bChars = this.getCharsOccurrences(b.toLowerCase());
 
 		return aChars.equals(bChars);
 	}
 
-	private Map<Character, Integer> getCharsOccurrencesB(final String a) {
+	private Map<Character, Integer> getCharsOccurrences(final String a) {
 		final Map<Character, Integer> occurrences = new HashMap<>();
 
 		for (int i = 0; i < a.length(); i++) {
