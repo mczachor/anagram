@@ -1,9 +1,9 @@
 package pl.czachorowskimichal.anagram.impl;
 
-import pl.czachorowskimichal.anagram.AlgosComparator;
-import pl.czachorowskimichal.anagram.Anagram;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.text.RandomStringGenerator;
+import pl.czachorowskimichal.anagram.AlgosComparator;
+import pl.czachorowskimichal.anagram.Anagram;
 
 import java.util.ArrayList;
 import java.util.List;

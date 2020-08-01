@@ -20,5 +20,13 @@ abstract class AbstractAnagramTest {
 		Assertions.assertFalse(this.anagram.isAnagram("ADad", "aaad"));
 
 		Assertions.assertTrue(this.anagram.isAnagram("asd", "sda"));
+		Assertions.assertTrue(this.anagram.isAnagram("a sd", "sda"));
+		Assertions.assertTrue(this.anagram.isAnagram("Asd", "sda"));
+		Assertions.assertTrue(this.anagram.isAnagram("As d", "sda"));
+		Assertions.assertTrue(this.anagram.isAnagram("Asd ", "sda"));
+		Assertions.assertTrue(this.anagram.isAnagram("asd", "Sda"));
+		Assertions.assertTrue(this.anagram.isAnagram("asd", "S da"));
+		Assertions.assertTrue(this.anagram.isAnagram("asd", "SdA"));
+		Assertions.assertTrue(this.anagram.isAnagram("asd", "s d a"));
 	}
 }

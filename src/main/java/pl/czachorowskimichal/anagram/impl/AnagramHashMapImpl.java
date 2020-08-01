@@ -1,27 +1,14 @@
 package pl.czachorowskimichal.anagram.impl;
 
-import pl.czachorowskimichal.anagram.Anagram;
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.HashMap;
 import java.util.Map;
 
-public class AnagramHashMapImpl implements Anagram {
+public class AnagramHashMapImpl extends AbstractAnagramImpl {
 
 	@Override
-	public boolean isAnagram(final String a, final String b) {
-		if (StringUtils.isEmpty(a)) {
-			return false;
-		}
-		if (StringUtils.isEmpty(b)) {
-			return false;
-		}
-		if (a.length() != b.length()) {
-			return false;
-		}
-
-		final Map<Character, Integer> aChars = this.getCharsOccurrences(a.toLowerCase());
-		final Map<Character, Integer> bChars = this.getCharsOccurrences(b.toLowerCase());
+	boolean executeAlgo(final String preparedA, final String preparedB) {
+		final Map<Character, Integer> aChars = this.getCharsOccurrences(preparedA);
+		final Map<Character, Integer> bChars = this.getCharsOccurrences(preparedB);
 
 		return aChars.equals(bChars);
 	}
