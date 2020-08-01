@@ -16,20 +16,20 @@ public class Main {
 		anagramAlgos.add(new AnagramHashMapImpl());
 		anagramAlgos.add(new AnagramComparingSortedStringsImpl());
 
-		final AlgosComparator alosComparator = new AlgosComparatorImpl();
+		final AlgosComparator algosComparator = new AlgosComparatorImpl();
 
 
 		System.out.println("For random words with length between 3 and 10");
-		alosComparator.measureExecutionTimes(anagramAlgos, 3, 10);
+		algosComparator.measureExecutionTimes(anagramAlgos, 3, 10);
 
 		System.out.println("For random words with length between 5 and 15");
-		alosComparator.measureExecutionTimes(anagramAlgos, 5, 15);
+		algosComparator.measureExecutionTimes(anagramAlgos, 5, 15);
 
 		System.out.println("For random words with length between 15 and 100");
-		alosComparator.measureExecutionTimes(anagramAlgos, 15, 100);
+		algosComparator.measureExecutionTimes(anagramAlgos, 15, 100);
 
 		System.out.println("For random words with length between 1000 and 2000");
-		alosComparator.measureExecutionTimes(anagramAlgos, 1000, 2000);
+		algosComparator.measureExecutionTimes(anagramAlgos, 1000, 2000);
 	}
 
 }
