@@ -27,6 +27,9 @@ public class Main {
 
 		System.out.println("For random words with length between 15 and 100");
 		alosComparator.measureExecutionTimes(anagramAlgos, 15, 100);
+
+		System.out.println("For random words with length between 1000 and 2000");
+		alosComparator.measureExecutionTimes(anagramAlgos, 1000, 2000);
 	}
 
 }
